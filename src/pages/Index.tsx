@@ -83,30 +83,30 @@ const Index = () => {
           <h2 className="text-3xl font-bold text-center mb-12">
             Our Customers
           </h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-12 max-w-4xl mx-auto items-center justify-items-center">
-            <div className="flex flex-col items-center justify-center transform hover:scale-105 transition-transform">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-12 max-w-4xl mx-auto items-center justify-items-center text-center">
+            <div className="flex flex-col items-center justify-center transform hover:scale-105 transition-transform w-full">
               <img 
                 src="/lovable-uploads/17c2b9e5-b057-4cbf-a53b-435350b09a0a.png" 
                 alt="Comfy Food" 
-                className="h-[4.4rem] object-contain mb-2"
+                className="h-[4.4rem] object-contain mb-2 mx-auto"
               />
-              <p className="text-lg font-medium">Comfy Food</p>
+              <p className="text-lg font-medium text-center">Comfy Food</p>
             </div>
-            <div className="flex flex-col items-center justify-center transform hover:scale-105 transition-transform">
+            <div className="flex flex-col items-center justify-center transform hover:scale-105 transition-transform w-full">
               <img 
                 src="/lovable-uploads/1bb3b802-8c0f-4d49-a982-a8fc0d0ff4bb.png" 
                 alt="Jelppari" 
-                className="h-[4.4rem] object-contain mb-2"
+                className="h-[4.4rem] object-contain mb-2 mx-auto"
               />
-              <p className="text-lg font-medium">Jelppari</p>
+              <p className="text-lg font-medium text-center">Jelppari</p>
             </div>
-            <div className="flex flex-col items-center justify-center transform hover:scale-105 transition-transform">
+            <div className="flex flex-col items-center justify-center transform hover:scale-105 transition-transform w-full">
               <img 
                 src="/lovable-uploads/2efa7d5e-4ac7-4d79-ad44-ed52dbef032c.png" 
                 alt="Amonda" 
-                className="h-[4.4rem] object-contain mb-2"
+                className="h-[4.4rem] object-contain mb-2 mx-auto"
               />
-              <p className="text-lg font-medium">Amonda</p>
+              <p className="text-lg font-medium text-center">Amonda</p>
             </div>
           </div>
         </div>
