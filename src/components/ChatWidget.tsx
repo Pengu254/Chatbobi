@@ -10,25 +10,25 @@ const ChatWidget = () => {
       {!isOpen ? (
         <button
           onClick={() => setIsOpen(true)}
-          className="bg-primary text-white p-4 rounded-full shadow-lg hover:bg-opacity-90 transition-all"
+          className="bg-[#FFE135] text-black p-4 rounded-full shadow-lg hover:bg-opacity-90 transition-all"
         >
           <MessageCircle size={24} />
         </button>
       ) : (
         <div className="bg-white rounded-lg shadow-xl w-80">
-          <div className="gradient-bg p-4 rounded-t-lg">
+          <div className="bg-[#FFE135] p-4 rounded-t-lg">
             <div className="flex justify-between items-center">
-              <h3 className="text-white font-semibold">Chat with us</h3>
+              <h3 className="text-black font-semibold">Chat with BOB</h3>
               <button
                 onClick={() => setIsOpen(false)}
-                className="text-white hover:text-opacity-80"
+                className="text-black hover:text-opacity-80"
               >
                 ×
               </button>
             </div>
           </div>
           <div className="h-80 p-4 overflow-y-auto">
-            <div className="bg-secondary rounded-lg p-3 mb-4">
+            <div className="bg-gray-100 rounded-lg p-3 mb-4">
               Hi! How can I help you today?
             </div>
           </div>
@@ -41,7 +41,7 @@ const ChatWidget = () => {
                 placeholder="Type your message..."
                 className="flex-1 p-2 border rounded-md"
               />
-              <button className="bg-primary text-white p-2 rounded-md hover:bg-opacity-90">
+              <button className="bg-[#FFE135] text-black p-2 rounded-md hover:bg-opacity-90">
                 <Send size={20} />
               </button>
             </div>
