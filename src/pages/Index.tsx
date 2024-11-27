@@ -14,10 +14,10 @@ const Index = () => {
           <div className="max-w-3xl mx-auto">
             <div className="text-center space-y-8">
               <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-black">
-                Automate Your Customer Support
+                Easiest Way to Handle Customer Support
               </h1>
               <p className="text-xl md:text-2xl text-gray-800 max-w-2xl mx-auto">
-                Deploy AI-powered chatbots that handle customer inquiries 24/7, reducing response time and improving satisfaction.
+                Keys to hand service for automate customer service
               </p>
               <div className="flex justify-center gap-4">
                 <button className="bg-black text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-opacity-90 transition-all shadow-lg">
