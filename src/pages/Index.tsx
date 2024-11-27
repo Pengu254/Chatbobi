@@ -83,8 +83,28 @@ const Index = () => {
           <h2 className="text-3xl font-bold text-center mb-12">
             Our Customers
           </h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
-            {/* Add customer logos here */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-12 max-w-4xl mx-auto items-center">
+            <div className="flex items-center justify-center transform hover:scale-105 transition-transform">
+              <img 
+                src="/lovable-uploads/17c2b9e5-b057-4cbf-a53b-435350b09a0a.png" 
+                alt="Comfy Food" 
+                className="h-12 object-contain filter grayscale hover:grayscale-0 transition-all"
+              />
+            </div>
+            <div className="flex items-center justify-center transform hover:scale-105 transition-transform">
+              <img 
+                src="/lovable-uploads/1bb3b802-8c0f-4d49-a982-a8fc0d0ff4bb.png" 
+                alt="Jelppari" 
+                className="h-12 object-contain filter grayscale hover:grayscale-0 transition-all"
+              />
+            </div>
+            <div className="flex items-center justify-center transform hover:scale-105 transition-transform">
+              <img 
+                src="/lovable-uploads/2efa7d5e-4ac7-4d79-ad44-ed52dbef032c.png" 
+                alt="Amonda" 
+                className="h-12 object-contain filter grayscale hover:grayscale-0 transition-all"
+              />
+            </div>
           </div>
         </div>
       </section>
