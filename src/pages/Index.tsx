@@ -90,12 +90,39 @@ const Index = () => {
       </section>
 
       {/* Timeline Section */}
-      <section className="py-20">
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">
-            Delivery Timeline
+          <h2 className="text-3xl font-bold text-center mb-16">
+            Launch Process
           </h2>
-          {/* Add timeline content here */}
+          <div className="max-w-5xl mx-auto">
+            <div className="relative">
+              {/* Timeline Bar */}
+              <div className="hidden md:block absolute top-1/2 left-0 w-full h-4 transform -translate-y-1/2">
+                <div className="w-full h-full bg-gradient-to-r from-yellow-300 via-pink-400 to-purple-500 rounded-full"></div>
+              </div>
+              
+              {/* Timeline Steps */}
+              <div className="relative grid grid-cols-1 md:grid-cols-5 gap-8">
+                {[
+                  { title: 'Sign up', time: 'If we start today...', content: 'Initial registration' },
+                  { title: 'Kickoff meeting', time: 'in 1-2 days', content: 'Project planning' },
+                  { title: 'Meet candidates', time: 'in 14-21 days', content: 'Team selection' },
+                  { title: 'Training', time: '1-2 week', content: 'Knowledge transfer' },
+                  { title: 'Launch', time: 'in 30 days*', content: '(first invoice)' },
+                ].map((step, index) => (
+                  <div key={index} className="relative flex flex-col items-center">
+                    <div className="w-12 h-12 bg-white border-4 border-yellow-400 rounded-full mb-4 z-10">
+                      <div className="w-full h-full bg-yellow-400 rounded-full transform scale-0 animate-ping"></div>
+                    </div>
+                    <h3 className="text-lg font-semibold mb-2">{step.title}</h3>
+                    <p className="text-sm text-gray-600 mb-2">{step.time}</p>
+                    <p className="text-sm text-gray-500">{step.content}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
