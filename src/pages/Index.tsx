@@ -84,26 +84,29 @@ const Index = () => {
             Our Customers
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-12 max-w-4xl mx-auto items-center">
-            <div className="flex items-center justify-center transform hover:scale-105 transition-transform">
+            <div className="flex flex-col items-center justify-center transform hover:scale-105 transition-transform">
               <img 
                 src="/lovable-uploads/17c2b9e5-b057-4cbf-a53b-435350b09a0a.png" 
                 alt="Comfy Food" 
-                className="h-12 object-contain filter grayscale hover:grayscale-0 transition-all"
+                className="h-16 object-contain mb-2"
               />
+              <p className="text-lg font-medium">Comfy Food</p>
             </div>
-            <div className="flex items-center justify-center transform hover:scale-105 transition-transform">
+            <div className="flex flex-col items-center justify-center transform hover:scale-105 transition-transform">
               <img 
                 src="/lovable-uploads/1bb3b802-8c0f-4d49-a982-a8fc0d0ff4bb.png" 
                 alt="Jelppari" 
-                className="h-12 object-contain filter grayscale hover:grayscale-0 transition-all"
+                className="h-16 object-contain mb-2"
               />
+              <p className="text-lg font-medium">Jelppari</p>
             </div>
-            <div className="flex items-center justify-center transform hover:scale-105 transition-transform">
+            <div className="flex flex-col items-center justify-center transform hover:scale-105 transition-transform">
               <img 
                 src="/lovable-uploads/2efa7d5e-4ac7-4d79-ad44-ed52dbef032c.png" 
                 alt="Amonda" 
-                className="h-12 object-contain filter grayscale hover:grayscale-0 transition-all"
+                className="h-16 object-contain mb-2"
               />
+              <p className="text-lg font-medium">Amonda</p>
             </div>
           </div>
         </div>
