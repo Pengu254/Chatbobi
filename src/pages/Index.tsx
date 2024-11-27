@@ -6,10 +6,10 @@ import ContactForm from '@/components/ContactForm';
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
       {/* Hero Section */}
       <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-[#FEF250]" />
+        <div className="absolute inset-0 bg-[#FEF250] opacity-95" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
           <div className="max-w-3xl mx-auto">
             <div className="text-center space-y-8">
@@ -36,7 +36,7 @@ const Index = () => {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center justify-between max-w-6xl mx-auto">
-            <div className="md:w-1/3 mb-12 md:mb-0">
+            <div className="md:w-1/3 mb-12 md:mb-0 animate-float">
               <img 
                 src="/lovable-uploads/d9f650d7-8b98-468d-9d62-299054de0af7.png" 
                 alt="BOB Mascot" 
@@ -90,8 +90,9 @@ const Index = () => {
       </section>
 
       {/* Timeline Section */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
+      <section className="py-20 bg-white relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-white to-gray-50 opacity-50" />
+        <div className="container mx-auto px-4 relative">
           <h2 className="text-3xl font-bold text-center mb-16">
             Launch Process
           </h2>
@@ -99,7 +100,7 @@ const Index = () => {
             <div className="relative">
               {/* Timeline Bar */}
               <div className="hidden md:block absolute top-1/2 left-0 w-full h-4 transform -translate-y-1/2">
-                <div className="w-full h-full bg-gradient-to-r from-[#FEF250] via-pink-400 to-purple-500 rounded-full"></div>
+                <div className="w-full h-full bg-gradient-to-r from-[#FEF250] via-[#FEF250] to-[#9b87f5] rounded-full opacity-75"></div>
               </div>
               
               {/* Timeline Steps */}
@@ -111,9 +112,9 @@ const Index = () => {
                   { title: 'Training', time: '1-2 week', content: 'Knowledge transfer' },
                   { title: 'Launch', time: 'in 30 days*', content: '(first invoice)' },
                 ].map((step, index) => (
-                  <div key={index} className="relative flex flex-col items-center">
-                    <div className="w-12 h-12 bg-white border-4 border-[#FEF250] rounded-full mb-4 z-10">
-                      <div className="w-full h-full bg-[#FEF250] rounded-full transform scale-0 animate-ping"></div>
+                  <div key={index} className="relative flex flex-col items-center group">
+                    <div className="w-12 h-12 bg-white border-4 border-[#FEF250] rounded-full mb-4 z-10 transition-all duration-300 group-hover:border-[#9b87f5]">
+                      <div className="w-full h-full bg-[#FEF250] rounded-full transform scale-0 animate-ping group-hover:bg-[#9b87f5]"></div>
                     </div>
                     <h3 className="text-lg font-semibold mb-2">{step.title}</h3>
                     <p className="text-sm text-gray-600 mb-2">{step.time}</p>
