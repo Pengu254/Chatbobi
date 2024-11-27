@@ -88,7 +88,7 @@ const Index = () => {
               <img 
                 src="/lovable-uploads/17c2b9e5-b057-4cbf-a53b-435350b09a0a.png" 
                 alt="Comfy Food" 
-                className="h-[4.4rem] object-contain mb-2 mx-auto"
+                className="h-[4.84rem] object-contain mb-2 mx-auto"
               />
               <p className="text-lg font-medium text-center">Comfy Food</p>
             </div>
@@ -96,7 +96,7 @@ const Index = () => {
               <img 
                 src="/lovable-uploads/1bb3b802-8c0f-4d49-a982-a8fc0d0ff4bb.png" 
                 alt="Jelppari" 
-                className="h-[4.4rem] object-contain mb-2 mx-auto"
+                className="h-[4.84rem] object-contain mb-2 mx-auto"
               />
               <p className="text-lg font-medium text-center">Jelppari</p>
             </div>
@@ -104,7 +104,7 @@ const Index = () => {
               <img 
                 src="/lovable-uploads/2efa7d5e-4ac7-4d79-ad44-ed52dbef032c.png" 
                 alt="Amonda" 
-                className="h-[4.4rem] object-contain mb-2 mx-auto"
+                className="h-[4.84rem] object-contain mb-2 mx-auto"
               />
               <p className="text-lg font-medium text-center">Amonda</p>
             </div>
