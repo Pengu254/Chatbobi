@@ -9,7 +9,7 @@ const Index = () => {
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-[#FFE135]" />
+        <div className="absolute inset-0 bg-[#FEF250]" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
           <div className="max-w-3xl mx-auto">
             <div className="text-center space-y-8">
@@ -99,7 +99,7 @@ const Index = () => {
             <div className="relative">
               {/* Timeline Bar */}
               <div className="hidden md:block absolute top-1/2 left-0 w-full h-4 transform -translate-y-1/2">
-                <div className="w-full h-full bg-gradient-to-r from-yellow-300 via-pink-400 to-purple-500 rounded-full"></div>
+                <div className="w-full h-full bg-gradient-to-r from-[#FEF250] via-pink-400 to-purple-500 rounded-full"></div>
               </div>
               
               {/* Timeline Steps */}
@@ -112,8 +112,8 @@ const Index = () => {
                   { title: 'Launch', time: 'in 30 days*', content: '(first invoice)' },
                 ].map((step, index) => (
                   <div key={index} className="relative flex flex-col items-center">
-                    <div className="w-12 h-12 bg-white border-4 border-yellow-400 rounded-full mb-4 z-10">
-                      <div className="w-full h-full bg-yellow-400 rounded-full transform scale-0 animate-ping"></div>
+                    <div className="w-12 h-12 bg-white border-4 border-[#FEF250] rounded-full mb-4 z-10">
+                      <div className="w-full h-full bg-[#FEF250] rounded-full transform scale-0 animate-ping"></div>
                     </div>
                     <h3 className="text-lg font-semibold mb-2">{step.title}</h3>
                     <p className="text-sm text-gray-600 mb-2">{step.time}</p>
