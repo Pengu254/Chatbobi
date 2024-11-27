@@ -8,18 +8,26 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="bg-[#FFE135] py-20">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-black">
-              The Easiest Way To Outsource Your Repetitive Customer Support
-            </h1>
-            <p className="text-xl mb-8 text-gray-800">
-              We offer AI setup customer service AI chat bots.
-            </p>
-            <button className="bg-black text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-opacity-90 transition-colors">
-              Book demo Now
-            </button>
+      <section className="relative overflow-hidden">
+        <div className="absolute inset-0 bg-[#FFE135]" />
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
+          <div className="max-w-3xl mx-auto">
+            <div className="text-center space-y-8">
+              <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-black">
+                Automate Your Customer Support
+              </h1>
+              <p className="text-xl md:text-2xl text-gray-800 max-w-2xl mx-auto">
+                Deploy AI-powered chatbots that handle customer inquiries 24/7, reducing response time and improving satisfaction.
+              </p>
+              <div className="flex justify-center gap-4">
+                <button className="bg-black text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-opacity-90 transition-all shadow-lg">
+                  Book Demo
+                </button>
+                <button className="bg-white text-black px-8 py-4 rounded-lg text-lg font-semibold hover:bg-opacity-90 transition-all shadow-lg">
+                  Learn More
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
