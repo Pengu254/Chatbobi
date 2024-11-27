@@ -138,9 +138,9 @@ const Index = () => {
                     <div className="w-12 h-12 bg-white border-4 border-[#FEF250] rounded-full mb-4 z-10 transition-all duration-300 group-hover:border-[#9b87f5]">
                       <div className="w-full h-full bg-[#FEF250] rounded-full transform scale-0 animate-ping group-hover:bg-[#9b87f5]"></div>
                     </div>
-                    <h3 className="text-lg font-semibold mb-2">{step.title}</h3>
-                    <p className="text-sm text-gray-600 mb-2">{step.time}</p>
-                    <p className="text-sm text-gray-500">{step.content}</p>
+                    <h3 className="text-lg font-semibold mb-2 bg-white px-2 rounded-lg z-10">{step.title}</h3>
+                    <p className="text-sm text-gray-600 mb-2 bg-white px-2 rounded-lg z-10">{step.time}</p>
+                    <p className="text-sm text-gray-500 bg-white px-2 rounded-lg z-10">{step.content}</p>
                   </div>
                 ))}
               </div>
