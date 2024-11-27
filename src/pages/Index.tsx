@@ -127,11 +127,10 @@ const Index = () => {
               </div>
               
               {/* Timeline Steps */}
-              <div className="relative grid grid-cols-1 md:grid-cols-5 gap-8">
+              <div className="relative grid grid-cols-1 md:grid-cols-4 gap-8">
                 {[
                   { title: 'Sign up', time: 'If we start today...', content: 'Initial registration' },
                   { title: 'Kickoff meeting', time: 'in 1-2 days', content: 'Project planning' },
-                  { title: 'Meet candidates', time: 'in 14-21 days', content: 'Team selection' },
                   { title: 'Training', time: '1-2 week', content: 'Knowledge transfer' },
                   { title: 'Launch', time: 'in 30 days*', content: '(first invoice)' },
                 ].map((step, index) => (
