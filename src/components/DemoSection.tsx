@@ -57,9 +57,9 @@ const DemoSection = () => {
             <div className="flex items-start space-x-4">
               <div className="bg-white rounded-xl p-2 shadow-lg animate-pulse">
                 <img 
-                  src="/photo-1485827404703-89b55fcc595e" 
-                  alt="AI Assistant"
-                  className="w-12 h-12 object-cover rounded-lg bg-white"
+                  src="/lovable-uploads/c6be872b-88c0-42a1-9d23-28f7c8605ed8.png" 
+                  alt="BOB Assistant" 
+                  className="w-12 h-12 object-cover rounded-lg"
                 />
               </div>
               <div className="flex-1">
@@ -78,9 +78,9 @@ const DemoSection = () => {
             <div className="flex items-start space-x-4">
               <div className="bg-white rounded-xl p-2 shadow-lg animate-pulse">
                 <img 
-                  src="/photo-1485827404703-89b55fcc595e" 
-                  alt="AI Assistant"
-                  className="w-12 h-12 object-cover rounded-lg bg-white"
+                  src="/lovable-uploads/c6be872b-88c0-42a1-9d23-28f7c8605ed8.png" 
+                  alt="BOB Assistant" 
+                  className="w-12 h-12 object-cover rounded-lg"
                 />
               </div>
               <div className="flex-1">
