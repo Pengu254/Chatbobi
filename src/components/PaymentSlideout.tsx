@@ -19,19 +19,17 @@ const PaymentSlideout = ({ isOpen, onClose, plan }: PaymentSlideoutProps) => {
   const handlePayment = async () => {
     try {
       setLoading(true);
-      const response = await fetch("/api/create-checkout-session", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
+      const { data, error } = await supabase.functions.invoke('create-checkout-session', {
+        body: {
           priceId: plan.price,
           planTitle: plan.title,
-        }),
+        },
       });
 
-      const { url } = await response.json();
-      window.location.href = url;
+      if (error) throw error;
+      if (data?.url) {
+        window.location.href = data.url;
+      }
     } catch (error) {
       toast({
         title: "Error",
