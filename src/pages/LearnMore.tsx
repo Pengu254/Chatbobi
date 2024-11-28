@@ -12,7 +12,7 @@ const LearnMore = () => {
             <div className="max-w-3xl mx-auto">
               <div className="text-center space-y-8">
                 <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-black">
-                  About ChatBob
+                  About ChatBoB
                 </h1>
                 <p className="text-xl md:text-2xl text-gray-800 max-w-2xl mx-auto">
                   Your AI-Powered Customer Service Solution
@@ -28,9 +28,9 @@ const LearnMore = () => {
             <div className="max-w-6xl mx-auto">
               <div className="grid md:grid-cols-2 gap-12">
                 <div className="space-y-6">
-                  <h2 className="text-3xl font-bold">Why Choose ChatBob?</h2>
+                  <h2 className="text-3xl font-bold">Why Choose ChatBoB?</h2>
                   <p className="text-lg text-gray-600">
-                    ChatBob is designed to revolutionize your customer service experience with advanced AI technology that understands and responds to your customers' needs 24/7.
+                    ChatBoB is designed to revolutionize your customer service experience with advanced AI technology that understands and responds to your customers' needs 24/7.
                   </p>
                   <ul className="space-y-4">
                     {[
@@ -62,7 +62,7 @@ const LearnMore = () => {
                 <div className="flex items-center justify-center">
                   <img
                     src="/lovable-uploads/d9f650d7-8b98-468d-9d62-299054de0af7.png"
-                    alt="ChatBob Features"
+                    alt="ChatBoB Features"
                     className="w-96 animate-float"
                   />
                 </div>
