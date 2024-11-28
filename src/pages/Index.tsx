@@ -4,6 +4,7 @@ import FeatureCard from '@/components/FeatureCard';
 import ContactForm from '@/components/ContactForm';
 import DemoSection from '@/components/DemoSection';
 import Header from '@/components/Header';
+import { Link } from 'react-router-dom';
 
 const Index = () => {
   return (
@@ -26,16 +27,18 @@ const Index = () => {
                   <button className="bg-black text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-opacity-90 transition-all shadow-lg">
                     Book Demo
                   </button>
-                  <button className="bg-white text-black px-8 py-4 rounded-lg text-lg font-semibold hover:bg-opacity-90 transition-all shadow-lg">
+                  <Link 
+                    to="/learn-more"
+                    className="bg-white text-black px-8 py-4 rounded-lg text-lg font-semibold hover:bg-opacity-90 transition-all shadow-lg"
+                  >
                     Learn More
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Demo Section */}
         <DemoSection />
 
         {/* Pricing Section */}
