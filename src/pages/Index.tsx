@@ -10,7 +10,6 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
       <Header />
-      {/* Add margin-top to account for fixed header */}
       <div className="pt-16">
         {/* Hero Section */}
         <section className="relative overflow-hidden">
@@ -55,7 +54,7 @@ const Index = () => {
               <div className="md:w-2/3 grid md:grid-cols-3 gap-8">
                 <PricingCard
                   title="SMALL"
-                  price="prod_RInCyh2tFU8Xks"
+                  price="price_1QQBbjBbQleOjTb0PQK8KqSz"
                   features={[
                     "Basic bot training",
                     "Email support",
