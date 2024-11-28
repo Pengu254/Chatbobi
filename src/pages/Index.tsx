@@ -55,6 +55,7 @@ const Index = () => {
                 <PricingCard
                   title="SMALL"
                   price="500"
+                  priceId="price_1QQBbjBbQleOjTb0PQK8KqSz"
                   features={[
                     "Basic bot training",
                     "Email support",

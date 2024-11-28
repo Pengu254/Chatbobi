@@ -4,11 +4,12 @@ import PaymentSlideout from "./PaymentSlideout";
 interface PricingCardProps {
   title: string;
   price: string;
+  priceId?: string;
   features: string[];
   isPopular?: boolean;
 }
 
-const PricingCard = ({ title, price, features, isPopular }: PricingCardProps) => {
+const PricingCard = ({ title, price, priceId, features, isPopular }: PricingCardProps) => {
   const [isPaymentOpen, setIsPaymentOpen] = useState(false);
 
   return (
@@ -42,7 +43,7 @@ const PricingCard = ({ title, price, features, isPopular }: PricingCardProps) =>
       <PaymentSlideout
         isOpen={isPaymentOpen}
         onClose={() => setIsPaymentOpen(false)}
-        plan={{ title, price }}
+        plan={{ title, price, priceId }}
       />
     </>
   );

@@ -9,6 +9,7 @@ interface PaymentSlideoutProps {
   plan: {
     title: string;
     price: string;
+    priceId?: string;
   };
 }
 
@@ -17,11 +18,20 @@ const PaymentSlideout = ({ isOpen, onClose, plan }: PaymentSlideoutProps) => {
   const [loading, setLoading] = useState(false);
 
   const handlePayment = async () => {
+    if (!plan.priceId) {
+      toast({
+        title: "Error",
+        description: "This plan is not available for purchase yet.",
+        variant: "destructive",
+      });
+      return;
+    }
+
     try {
       setLoading(true);
       const { data, error } = await supabase.functions.invoke('create-checkout-session', {
         body: {
-          priceId: plan.price,
+          priceId: plan.priceId,
           planTitle: plan.title,
         },
       });
