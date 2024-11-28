@@ -40,67 +40,67 @@ const Index = () => {
           </h2>
           <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {/* Old Bot Side */}
-            <div className="p-6 rounded-lg bg-gray-100 space-y-4">
-              <div className="flex items-start space-x-4 opacity-75">
-                <div className="bg-gray-300 rounded-lg p-4">
-                  <Bot className="w-6 h-6 text-gray-600" />
+            <div className="p-6 rounded-lg bg-gray-200 space-y-4 border border-gray-300">
+              <div className="flex items-start space-x-4 opacity-50">
+                <div className="bg-gray-400 rounded-lg p-4">
+                  <Bot className="w-6 h-6 text-gray-700" />
                 </div>
                 <div className="flex-1">
-                  <div className="bg-white p-4 rounded-lg shadow-sm">
-                    <p className="text-gray-600">Hi, how can I help you?</p>
+                  <div className="bg-gray-100 p-4 rounded-lg shadow-sm border border-gray-300">
+                    <p className="text-gray-700">Hi, how can I help you?</p>
                   </div>
                 </div>
               </div>
-              <div className="flex items-start space-x-4 justify-end opacity-75">
+              <div className="flex items-start space-x-4 justify-end opacity-50">
                 <div className="flex-1">
-                  <div className="bg-gray-200 p-4 rounded-lg">
-                    <p className="text-gray-700">I need a refund for my order #12345</p>
+                  <div className="bg-gray-300 p-4 rounded-lg border border-gray-400">
+                    <p className="text-gray-800">I need a refund for my order #12345</p>
                   </div>
                 </div>
               </div>
-              <div className="flex items-start space-x-4 opacity-75">
-                <div className="bg-gray-300 rounded-lg p-4">
-                  <Bot className="w-6 h-6 text-gray-600" />
+              <div className="flex items-start space-x-4 opacity-50">
+                <div className="bg-gray-400 rounded-lg p-4">
+                  <Bot className="w-6 h-6 text-gray-700" />
                 </div>
                 <div className="flex-1">
-                  <div className="bg-white p-4 rounded-lg shadow-sm">
-                    <p className="text-gray-600">I don't understand. Please contact support@example.com</p>
+                  <div className="bg-gray-100 p-4 rounded-lg shadow-sm border border-gray-300">
+                    <p className="text-gray-700">I don't understand. Please contact support@example.com</p>
                   </div>
                 </div>
               </div>
-              <p className="text-center text-gray-500 mt-4">Traditional Bot: Limited Understanding</p>
+              <p className="text-center text-gray-500 mt-4 font-mono text-sm">Traditional Bot: Limited Understanding</p>
             </div>
 
             {/* New Bot Side */}
-            <div className="p-6 rounded-lg bg-gradient-to-br from-[#F2FCE2] to-[#E5DEFF] space-y-4">
+            <div className="p-6 rounded-lg bg-gradient-to-br from-[#F2FCE2] to-[#E5DEFF] space-y-4 shadow-xl border border-[#9b87f5]/20">
               <div className="flex items-start space-x-4">
-                <div className="bg-[#9b87f5] rounded-lg p-4">
-                  <Bot className="w-6 h-6 text-white" />
+                <div className="bg-[#9b87f5] rounded-lg p-4 shadow-lg">
+                  <Bot className="w-6 h-6 text-white animate-pulse" />
                 </div>
                 <div className="flex-1">
-                  <div className="bg-white p-4 rounded-lg shadow-sm">
-                    <p className="text-gray-800">Hello! I'm here to assist you. How can I help?</p>
+                  <div className="bg-white p-4 rounded-lg shadow-lg border border-[#9b87f5]/20">
+                    <p className="text-gray-800 font-medium">Hello! I'm here to assist you. How can I help?</p>
                   </div>
                 </div>
               </div>
               <div className="flex items-start space-x-4 justify-end">
                 <div className="flex-1">
-                  <div className="bg-[#FEF250] p-4 rounded-lg">
-                    <p className="text-gray-800">I need a refund for my order #12345</p>
+                  <div className="bg-[#FEF250] p-4 rounded-lg shadow-lg">
+                    <p className="text-gray-800 font-medium">I need a refund for my order #12345</p>
                   </div>
                 </div>
               </div>
               <div className="flex items-start space-x-4">
-                <div className="bg-[#9b87f5] rounded-lg p-4">
-                  <Bot className="w-6 h-6 text-white" />
+                <div className="bg-[#9b87f5] rounded-lg p-4 shadow-lg">
+                  <Bot className="w-6 h-6 text-white animate-pulse" />
                 </div>
                 <div className="flex-1">
-                  <div className="bg-white p-4 rounded-lg shadow-sm">
-                    <p className="text-gray-800">I've found your order #12345. I can process the refund right away. The amount of $59.99 will be returned to your original payment method within 3-5 business days. Is there anything else you need help with?</p>
+                  <div className="bg-white p-4 rounded-lg shadow-lg border border-[#9b87f5]/20">
+                    <p className="text-gray-800 font-medium">I've found your order #12345. I can process the refund right away. The amount of $59.99 will be returned to your original payment method within 3-5 business days. Is there anything else you need help with?</p>
                   </div>
                 </div>
               </div>
-              <p className="text-center text-gray-700 mt-4">AI Bot: Smart Understanding & Quick Actions</p>
+              <p className="text-center text-gray-700 mt-4 font-medium">AI Bot: Smart Understanding & Quick Actions</p>
             </div>
           </div>
         </div>
