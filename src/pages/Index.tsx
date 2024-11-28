@@ -22,7 +22,7 @@ const Index = () => {
                   Easiest Way to Handle Customer Support
                 </h1>
                 <p className="text-xl md:text-2xl text-gray-800 max-w-2xl mx-auto">
-                  Keys to hand service for automate customer service
+                  End to End service for automa customer service
                 </p>
                 <div className="flex justify-center gap-4">
                   <button className="bg-black text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-opacity-90 transition-all shadow-lg">
