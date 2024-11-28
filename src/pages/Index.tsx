@@ -1,5 +1,4 @@
 import { Bot, MessageSquare, Zap, Shield } from 'lucide-react';
-import ChatWidget from '@/components/ChatWidget';
 import PricingCard from '@/components/PricingCard';
 import FeatureCard from '@/components/FeatureCard';
 import ContactForm from '@/components/ContactForm';
@@ -168,9 +167,6 @@ const Index = () => {
             </div>
           </div>
         </footer>
-
-        {/* Chat Widget */}
-        <ChatWidget />
       </div>
     </div>
   );
