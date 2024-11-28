@@ -75,14 +75,59 @@ const SmallPlanSection = () => {
               </Card>
             </div>
 
-            {/* Right side - Image */}
-            <div className="relative h-full">
-              <img
-                src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d"
-                alt="AI Chatbot Demo"
-                className="rounded-xl shadow-2xl object-cover w-full h-[600px]"
-              />
-              <div className="absolute inset-0 bg-gradient-to-tr from-[#9b87f5]/20 to-transparent rounded-xl" />
+            {/* Right side - Chat Demo */}
+            <div className="relative bg-white rounded-xl shadow-2xl p-6">
+              <div className="flex items-center space-x-3 border-b pb-4 mb-4">
+                <Bot className="h-8 w-8 text-[#9b87f5]" />
+                <h3 className="text-lg font-semibold">AI Assistant Demo</h3>
+              </div>
+              
+              <div className="space-y-4">
+                {/* User Message */}
+                <div className="flex justify-end">
+                  <div className="bg-[#F3F4F6] rounded-lg p-3 max-w-[80%]">
+                    <p className="text-gray-800">Hi! I need help with my order #12345</p>
+                  </div>
+                </div>
+
+                {/* Bot Response */}
+                <div className="flex space-x-2">
+                  <Bot className="h-6 w-6 text-[#9b87f5]" />
+                  <div className="bg-[#EEF2FF] rounded-lg p-3 max-w-[80%]">
+                    <p className="text-gray-800">Hello! I'd be happy to help you with your order. I can see that order #12345 was shipped yesterday and is expected to arrive by Friday. Would you like to track its current status?</p>
+                  </div>
+                </div>
+
+                {/* User Message */}
+                <div className="flex justify-end">
+                  <div className="bg-[#F3F4F6] rounded-lg p-3 max-w-[80%]">
+                    <p className="text-gray-800">Yes, please show me the tracking information</p>
+                  </div>
+                </div>
+
+                {/* Bot Response */}
+                <div className="flex space-x-2">
+                  <Bot className="h-6 w-6 text-[#9b87f5]" />
+                  <div className="bg-[#EEF2FF] rounded-lg p-3 max-w-[80%]">
+                    <p className="text-gray-800">Here's your tracking link: <span className="text-[#6E59A5] underline">track.shipping.com/12345</span>. The package is currently in transit from our warehouse. Is there anything else you'd like to know?</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Input Field Demo */}
+              <div className="mt-4 border-t pt-4">
+                <div className="flex items-center space-x-2">
+                  <input
+                    type="text"
+                    placeholder="Type your message..."
+                    className="flex-1 p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#9b87f5]"
+                    disabled
+                  />
+                  <button className="bg-[#9b87f5] text-white px-4 py-2 rounded-lg" disabled>
+                    Send
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
