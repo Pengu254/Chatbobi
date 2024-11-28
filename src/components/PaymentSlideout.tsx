@@ -1,6 +1,5 @@
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { useToast } from "@/components/ui/use-toast";
-import { useSession } from "@supabase/auth-helpers-react";
 import { useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
 
@@ -16,18 +15,8 @@ interface PaymentSlideoutProps {
 const PaymentSlideout = ({ isOpen, onClose, plan }: PaymentSlideoutProps) => {
   const { toast } = useToast();
   const [loading, setLoading] = useState(false);
-  const session = useSession();
 
   const handlePayment = async () => {
-    if (!session?.user) {
-      toast({
-        title: "Please sign in",
-        description: "You need to be signed in to purchase a subscription",
-        variant: "destructive",
-      });
-      return;
-    }
-
     try {
       setLoading(true);
       const response = await fetch("/api/create-checkout-session", {
@@ -37,7 +26,6 @@ const PaymentSlideout = ({ isOpen, onClose, plan }: PaymentSlideoutProps) => {
         },
         body: JSON.stringify({
           priceId: plan.price,
-          userId: session.user.id,
           planTitle: plan.title,
         }),
       });
