@@ -56,7 +56,11 @@ const DemoSection = () => {
             </div>
             <div className="flex items-start space-x-4">
               <div className="bg-[#9b87f5] rounded-xl p-4 shadow-lg animate-pulse">
-                <Bot className="w-6 h-6 text-white" />
+                <img 
+                  src="/lovable-uploads/56bcf0d8-a5fa-49be-8bcd-d3250428a8ca.png" 
+                  alt="AI Assistant" 
+                  className="w-6 h-6"
+                />
               </div>
               <div className="flex-1">
                 <div className="bg-white/90 p-4 rounded-xl shadow-lg border border-[#9b87f5]/20 animate-fade-in">
@@ -73,7 +77,11 @@ const DemoSection = () => {
             </div>
             <div className="flex items-start space-x-4">
               <div className="bg-[#9b87f5] rounded-xl p-4 shadow-lg animate-pulse">
-                <Bot className="w-6 h-6 text-white" />
+                <img 
+                  src="/lovable-uploads/56bcf0d8-a5fa-49be-8bcd-d3250428a8ca.png" 
+                  alt="AI Assistant" 
+                  className="w-6 h-6"
+                />
               </div>
               <div className="flex-1">
                 <div className="bg-white/90 p-4 rounded-xl shadow-lg border border-[#9b87f5]/20 animate-fade-in">
