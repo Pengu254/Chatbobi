@@ -26,7 +26,7 @@ const PricingCard = ({ title, price, features, isPopular }: PricingCardProps) =>
       <button className={`w-full py-2 px-4 rounded-full transition-all duration-300 ${
         isPopular ? 'bg-[#FEF250] text-black hover:bg-opacity-90 shadow-md hover:shadow-lg' : 'bg-gray-100 text-black hover:bg-gray-200'
       }`}>
-        Sign up now
+        Order Now
       </button>
     </div>
   );
