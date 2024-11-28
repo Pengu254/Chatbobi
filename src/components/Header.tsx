@@ -51,12 +51,9 @@ const Header = () => {
           <Link to="/pricing" className="text-gray-800 hover:text-black transition-colors">
             Pricing
           </Link>
-          <div className="relative">
-            <div className="absolute -top-1 -right-1 w-3 h-3 bg-black rounded-full" />
-            <button className="bg-white text-black px-6 py-2 rounded-full font-medium hover:bg-gray-100 transition-colors shadow-sm border-2 border-black">
-              Book Demo
-            </button>
-          </div>
+          <button className="bg-white text-black px-6 py-2 rounded-full font-medium hover:bg-gray-100 transition-colors shadow-sm border-2 border-black">
+            Book Demo
+          </button>
         </nav>
       </div>
     </header>
