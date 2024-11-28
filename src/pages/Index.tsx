@@ -111,12 +111,19 @@ const Index = () => {
                 <p className="text-lg font-medium">Jelppari</p>
               </div>
               <div className="flex flex-col items-center justify-center transform hover:scale-105 transition-transform w-full md:w-auto order-3 md:order-3">
-                <img 
-                  src="/lovable-uploads/2efa7d5e-4ac7-4d79-ad44-ed52dbef032c.png" 
-                  alt="Amonda" 
-                  className="h-[4.84rem] object-contain mb-2"
-                />
-                <p className="text-lg font-medium">Amonda</p>
+                <a 
+                  href="https://www.amonda.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="flex flex-col items-center"
+                >
+                  <img 
+                    src="/lovable-uploads/2efa7d5e-4ac7-4d79-ad44-ed52dbef032c.png" 
+                    alt="Amonda" 
+                    className="h-[4.84rem] object-contain mb-2"
+                  />
+                  <p className="text-lg font-medium">Amonda</p>
+                </a>
               </div>
             </div>
           </div>
