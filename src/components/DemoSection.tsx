@@ -8,7 +8,7 @@ const DemoSection = () => {
           See the Difference
         </h2>
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-          {/* Old Bot Side - More visible but still outdated looking */}
+          {/* Old Bot Side */}
           <div className="p-6 rounded-lg bg-gray-200 space-y-4 border border-gray-300 opacity-75 hover:opacity-85 transition-opacity">
             <div className="text-center mb-6">
               <span className="inline-block px-3 py-1 bg-gray-300 text-gray-700 text-sm rounded-full">
@@ -55,11 +55,11 @@ const DemoSection = () => {
               </span>
             </div>
             <div className="flex items-start space-x-4">
-              <div className="bg-[#9b87f5] rounded-xl p-2 shadow-lg animate-pulse">
+              <div className="bg-white rounded-xl p-2 shadow-lg animate-pulse">
                 <img 
-                  src="/lovable-uploads/12691f5b-e9ea-453c-9c32-63dc825dec75.png" 
+                  src="/lovable-uploads/dbc591a8-2c67-4cd0-8368-f94afcfe5db8.png" 
                   alt="BOB Assistant" 
-                  className="w-10 h-10 object-cover"
+                  className="w-12 h-12 object-cover"
                 />
               </div>
               <div className="flex-1">
@@ -76,11 +76,11 @@ const DemoSection = () => {
               </div>
             </div>
             <div className="flex items-start space-x-4">
-              <div className="bg-[#9b87f5] rounded-xl p-2 shadow-lg animate-pulse">
+              <div className="bg-white rounded-xl p-2 shadow-lg animate-pulse">
                 <img 
-                  src="/lovable-uploads/12691f5b-e9ea-453c-9c32-63dc825dec75.png" 
+                  src="/lovable-uploads/dbc591a8-2c67-4cd0-8368-f94afcfe5db8.png" 
                   alt="BOB Assistant" 
-                  className="w-10 h-10 object-cover"
+                  className="w-12 h-12 object-cover"
                 />
               </div>
               <div className="flex-1">
