@@ -65,6 +65,7 @@ const Index = () => {
                 <PricingCard
                   title="GROWTH"
                   price="1000"
+                  priceId="price_1QQBn7BbQleOjTb0EYlVNrY3"
                   features={[
                     "Advanced bot training",
                     "Priority support",
@@ -75,6 +76,7 @@ const Index = () => {
                 <PricingCard
                   title="PRO"
                   price="2500"
+                  priceId="price_1QQBnzBbQleOjTb0irEjlAgf"
                   features={[
                     "Custom bot training",
                     "24/7 phone support",
