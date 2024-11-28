@@ -8,41 +8,41 @@ const DemoSection = () => {
           See the Difference
         </h2>
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-          {/* Old Bot Side - More outdated and muted */}
-          <div className="p-6 rounded-lg bg-gray-100 space-y-4 border border-gray-200 opacity-40 hover:opacity-60 transition-opacity">
+          {/* Old Bot Side - More visible but still outdated looking */}
+          <div className="p-6 rounded-lg bg-gray-200 space-y-4 border border-gray-300 opacity-75 hover:opacity-85 transition-opacity">
             <div className="text-center mb-6">
-              <span className="inline-block px-3 py-1 bg-gray-200 text-gray-600 text-sm rounded-full">
+              <span className="inline-block px-3 py-1 bg-gray-300 text-gray-700 text-sm rounded-full">
                 Traditional Bot
               </span>
             </div>
             <div className="flex items-start space-x-4">
-              <div className="bg-gray-300 rounded-lg p-4">
-                <Bot className="w-6 h-6 text-gray-500" />
+              <div className="bg-gray-400 rounded-lg p-4">
+                <Bot className="w-6 h-6 text-gray-600" />
               </div>
               <div className="flex-1">
-                <div className="bg-white p-4 rounded-lg border border-gray-300">
-                  <p className="text-gray-600">Hi, how can I help you?</p>
+                <div className="bg-white p-4 rounded-lg border border-gray-400">
+                  <p className="text-gray-700">Hi, how can I help you?</p>
                 </div>
               </div>
             </div>
             <div className="flex items-start space-x-4 justify-end">
               <div className="flex-1">
-                <div className="bg-gray-200 p-4 rounded-lg">
-                  <p className="text-gray-700">I need a refund for my order #12345</p>
+                <div className="bg-gray-300 p-4 rounded-lg">
+                  <p className="text-gray-800">I need a refund for my order #12345</p>
                 </div>
               </div>
             </div>
             <div className="flex items-start space-x-4">
-              <div className="bg-gray-300 rounded-lg p-4">
-                <Bot className="w-6 h-6 text-gray-500" />
+              <div className="bg-gray-400 rounded-lg p-4">
+                <Bot className="w-6 h-6 text-gray-600" />
               </div>
               <div className="flex-1">
-                <div className="bg-white p-4 rounded-lg border border-gray-300">
-                  <p className="text-gray-600">I don't understand. Please contact support@example.com</p>
+                <div className="bg-white p-4 rounded-lg border border-gray-400">
+                  <p className="text-gray-700">I don't understand. Please contact support@example.com</p>
                 </div>
               </div>
             </div>
-            <p className="text-center text-gray-400 mt-4 font-mono text-xs">
+            <p className="text-center text-gray-500 mt-4 font-mono text-xs">
               Limited Understanding • No Actions • Email Only
             </p>
           </div>
