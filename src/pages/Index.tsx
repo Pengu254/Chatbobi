@@ -55,7 +55,7 @@ const Index = () => {
               <div className="md:w-2/3 grid md:grid-cols-3 gap-8">
                 <PricingCard
                   title="SMALL"
-                  price="price_1OvCFXHVlLhQMGWBPxdPFCWx"
+                  price="prod_RInCyh2tFU8Xks"
                   features={[
                     "Basic bot training",
                     "Email support",
@@ -64,7 +64,7 @@ const Index = () => {
                 />
                 <PricingCard
                   title="GROWTH"
-                  price="price_1OvCFXHVlLhQMGWBghjkPFCWx"
+                  price="prod_RInCyh2tFU8Xks"
                   features={[
                     "Advanced bot training",
                     "Priority support",
@@ -74,7 +74,7 @@ const Index = () => {
                 />
                 <PricingCard
                   title="PRO"
-                  price="price_1OvCFXHVlLhQMGWBklmnPFCWx"
+                  price="prod_RInCyh2tFU8Xks"
                   features={[
                     "Custom bot training",
                     "24/7 phone support",
