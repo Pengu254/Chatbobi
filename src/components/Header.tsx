@@ -6,7 +6,10 @@ const Header = () => {
     <header className="bg-[#FEF250] py-4 px-6 fixed w-full top-0 z-50">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <Link to="/" className="flex items-center">
-          <span className="text-2xl font-bold">Chat <span className="text-black">Bob</span></span>
+          <span className="text-2xl font-bold">
+            <span className="text-white" style={{ textShadow: '2px 2px 0 black, -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black' }}>Chat</span>
+            <span className="text-black ml-1">Bob</span>
+          </span>
         </Link>
         
         <nav className="hidden md:flex items-center space-x-8">
