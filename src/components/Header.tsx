@@ -34,10 +34,11 @@ const Header = () => {
               className="text-black ml-1" 
               style={{ 
                 letterSpacing: '-0.02em',
-                fontWeight: 1000
+                fontWeight: 1000,
+                textTransform: 'capitalize'
               }}
             >
-              BOB
+              Bob
             </span>
           </span>
         </Link>
