@@ -1,6 +1,6 @@
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { useToast } from "@/components/ui/use-toast";
-import { useSession } from "@supabase/auth-ui-react";
+import { useSession } from "@supabase/auth-helpers-react";
 import { useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
 
