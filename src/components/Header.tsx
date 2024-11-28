@@ -18,14 +18,26 @@ const Header = () => {
                   -3px 0px 0 #000,
                    3px 0px 0 #000,
                    0px -3px 0 #000,
-                   0px 3px 0 #000
+                   0px 3px 0 #000,
+                  -1px -1px 0 #000,
+                   1px -1px 0 #000,
+                  -1px  1px 0 #000,
+                   1px  1px 0 #000
                 `,
-                letterSpacing: '0.02em'
+                letterSpacing: '0.03em'
               }}
             >
               Chat
             </span>
-            <span className="text-black ml-1 font-black" style={{ letterSpacing: '-0.02em' }}>Bob</span>
+            <span 
+              className="text-black ml-1 font-black" 
+              style={{ 
+                letterSpacing: '-0.02em',
+                fontWeight: 900
+              }}
+            >
+              Bob
+            </span>
           </span>
         </Link>
         
@@ -39,9 +51,12 @@ const Header = () => {
           <Link to="/pricing" className="text-gray-800 hover:text-black transition-colors">
             Pricing
           </Link>
-          <button className="bg-white text-black px-6 py-2 rounded-full font-medium hover:bg-gray-100 transition-colors shadow-sm">
-            Book Demo
-          </button>
+          <div className="relative">
+            <div className="absolute -top-1 -right-1 w-3 h-3 bg-black rounded-full" />
+            <button className="bg-white text-black px-6 py-2 rounded-full font-medium hover:bg-gray-100 transition-colors shadow-sm border-2 border-black">
+              Book Demo
+            </button>
+          </div>
         </nav>
       </div>
     </header>
