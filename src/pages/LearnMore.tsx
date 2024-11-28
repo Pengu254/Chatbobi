@@ -3,6 +3,7 @@ import Header from '@/components/Header';
 import HeroSection from '@/components/sections/HeroSection';
 import WhyChooseSection from '@/components/sections/WhyChooseSection';
 import SmallPlanSection from '@/components/sections/SmallPlanSection';
+import GrowthPlanSection from '@/components/sections/GrowthPlanSection';
 import { Card, CardContent } from '@/components/ui/card';
 import { MessageCircle, Mail, Phone, Share2 } from 'lucide-react';
 
@@ -14,6 +15,7 @@ const LearnMore = () => {
         <HeroSection />
         <WhyChooseSection />
         <SmallPlanSection />
+        <GrowthPlanSection />
         {/* Benefits Section */}
         <section className="py-20 bg-gray-50">
           <div className="container mx-auto px-4">
