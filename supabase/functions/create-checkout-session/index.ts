@@ -20,6 +20,10 @@ serve(async (req) => {
   try {
     const { priceId, planTitle } = await req.json()
 
+    if (!priceId) {
+      throw new Error('Price ID is required')
+    }
+
     // Create checkout session
     const session = await stripe.checkout.sessions.create({
       line_items: [
