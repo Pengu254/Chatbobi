@@ -15,62 +15,62 @@ const SmallPlanSection = () => {
           </div>
           
           <div className="grid md:grid-cols-2 gap-8 items-center">
-            {/* Left side - Text Content */}
-            <div className="space-y-8">
-              {/* What You Get Section */}
+            {/* Left side - Combined Features and Benefits */}
+            <div>
               <Card className="bg-white shadow-md">
                 <CardContent className="p-6">
-                  <div className="flex items-center space-x-4 mb-4">
-                    <div className="bg-[#FEF250] bg-opacity-20 p-3 rounded-lg">
-                      <Bot className="h-6 w-6 text-[#9b87f5]" />
+                  {/* What You Get Section */}
+                  <div className="mb-8">
+                    <div className="flex items-center space-x-4 mb-4">
+                      <div className="bg-[#FEF250] bg-opacity-20 p-3 rounded-lg">
+                        <Bot className="h-6 w-6 text-[#9b87f5]" />
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-semibold">Essential Features</h3>
+                        <p className="text-gray-600">What You Get with Small Plan</p>
+                      </div>
                     </div>
-                    <div>
-                      <h3 className="text-xl font-semibold">What You Get</h3>
-                      <p className="text-gray-600">Essential AI Features</p>
+                    <ul className="space-y-3 mb-6">
+                      {[
+                        "24/7 Customer Support Coverage",
+                        "Basic Language Understanding",
+                        "Simple Website Integration",
+                        "Standard Response Templates",
+                        "Basic Analytics Dashboard"
+                      ].map((feature, index) => (
+                        <li key={index} className="flex items-center space-x-3">
+                          <Check className="h-5 w-5 text-[#9b87f5]" />
+                          <span className="text-gray-700">{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
+
+                    {/* Key Benefits Section - Now directly below features */}
+                    <div className="border-t pt-6">
+                      <h4 className="text-xl font-semibold mb-4">Key Benefits</h4>
+                      <ul className="space-y-4">
+                        {[
+                          {
+                            title: "Reduce Support Costs",
+                            description: "Handle basic inquiries automatically, saving on support staff costs"
+                          },
+                          {
+                            title: "Always Available",
+                            description: "Provide instant responses to customers 24/7, even outside business hours"
+                          },
+                          {
+                            title: "Quick Setup",
+                            description: "Get started in minutes with our simple integration process"
+                          }
+                        ].map((benefit, index) => (
+                          <li key={index} className="pb-3 last:pb-0">
+                            <h5 className="font-semibold text-[#6E59A5] mb-1">{benefit.title}</h5>
+                            <p className="text-gray-600">{benefit.description}</p>
+                          </li>
+                        ))}
+                      </ul>
                     </div>
                   </div>
-                  <ul className="space-y-3">
-                    {[
-                      "24/7 Customer Support Coverage",
-                      "Basic Language Understanding",
-                      "Simple Website Integration",
-                      "Standard Response Templates",
-                      "Basic Analytics Dashboard"
-                    ].map((feature, index) => (
-                      <li key={index} className="flex items-center space-x-3">
-                        <Check className="h-5 w-5 text-[#9b87f5]" />
-                        <span className="text-gray-700">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </CardContent>
-              </Card>
-
-              {/* Benefits Section */}
-              <Card className="bg-white shadow-md">
-                <CardContent className="p-6">
-                  <h4 className="text-xl font-semibold mb-4">Key Benefits</h4>
-                  <ul className="space-y-4">
-                    {[
-                      {
-                        title: "Reduce Support Costs",
-                        description: "Handle basic inquiries automatically, saving on support staff costs"
-                      },
-                      {
-                        title: "Always Available",
-                        description: "Provide instant responses to customers 24/7, even outside business hours"
-                      },
-                      {
-                        title: "Quick Setup",
-                        description: "Get started in minutes with our simple integration process"
-                      }
-                    ].map((benefit, index) => (
-                      <li key={index} className="border-b border-gray-100 pb-3 last:border-0 last:pb-0">
-                        <h5 className="font-semibold text-[#6E59A5] mb-1">{benefit.title}</h5>
-                        <p className="text-gray-600">{benefit.description}</p>
-                      </li>
-                    ))}
-                  </ul>
                 </CardContent>
               </Card>
             </div>
