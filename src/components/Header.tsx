@@ -8,7 +8,7 @@ const Header = () => {
         <Link to="/" className="flex items-center">
           <span className="text-3xl font-extrabold tracking-tight">
             <span 
-              className="text-white" 
+              className="text-white font-black" 
               style={{ 
                 textShadow: `
                   -2px -2px 0 #000,  
@@ -24,19 +24,20 @@ const Header = () => {
                   -1px  1px 0 #000,
                    1px  1px 0 #000
                 `,
-                letterSpacing: '0.03em'
+                letterSpacing: '0.03em',
+                fontWeight: 900
               }}
             >
               Chat
             </span>
             <span 
-              className="text-black ml-1 font-black" 
+              className="text-black ml-1" 
               style={{ 
                 letterSpacing: '-0.02em',
-                fontWeight: 900
+                fontWeight: 1000
               }}
             >
-              Bob
+              BOB
             </span>
           </span>
         </Link>
