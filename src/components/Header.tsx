@@ -2,6 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
+  const scrollToPricing = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const pricingSection = document.querySelector('#pricing-section');
+    if (pricingSection) {
+      pricingSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <header className="bg-[#FEF250] py-4 px-6 fixed w-full top-0 z-50">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
@@ -50,9 +58,13 @@ const Header = () => {
           <Link to="/what-we-do" className="text-gray-800 hover:text-black transition-colors">
             What We Do
           </Link>
-          <Link to="/pricing" className="text-gray-800 hover:text-black transition-colors">
+          <a 
+            href="#pricing-section" 
+            onClick={scrollToPricing}
+            className="text-gray-800 hover:text-black transition-colors"
+          >
             Pricing
-          </Link>
+          </a>
           <button className="bg-white text-black px-6 py-2 rounded-full font-medium hover:bg-gray-100 transition-colors shadow-sm border-2 border-black">
             Book Demo
           </button>
